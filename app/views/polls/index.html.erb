@@ -1,0 +1,13 @@
+<h1> Polls </h1>
+</br>
+<%= link_to "New Poll Record", new_poll_path %>
+</br>
+<% @polls.each do |o| %>
+</br>
+<%= o.subject %>
+<%= o.date %>
+<%= o.location %>
+<%= o.total_polled %>
+<%= link_to "Edit", edit_poll_path(o) %> | <%= link_to "Destroy Poll Record", poll_path(o), method: :delete %>
+</br>
+<% end %>

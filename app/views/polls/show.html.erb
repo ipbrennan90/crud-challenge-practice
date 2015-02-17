@@ -1,0 +1,14 @@
+<h1> Poll Page </h1>
+
+</br>
+
+<%= @poll.subject %>
+</br>
+<%= @poll.date  %>
+</br>
+<%= @poll.location %>
+</br>
+<%= @poll.total_polled %>
+</br>
+<%= link_to "Edit", edit_poll_path(@poll)  %> | <%= link_to "Back", polls_path %>
+</br>
